@@ -1,11 +1,11 @@
 
-<div class="ae-grid au-xs-ta-center au-mb-4">
+<div class="ae-grid au-xs-ta-center au-mb-3">
     <!--Este div se repite tantas veces como personas haya en el database eqipo-->
-    <div *ngFor="let person of infoService.team" class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3">
+    <div *ngFor="let person of infoService.team" class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3 item-lg--offset-2">
         <img [src]="person.img" alt="" class="au-mb-3">
         <h5 class="ae-u-bolder au-mt-2">{{person.nombre}}</h5>
-        <p class="ae-u-bolder au-mb-3">{{person.profesion}}</p>
-        <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{person.frase}}</p>
+        <p class="ae-u-bold au-mb-3">{{person.profesion}}</p>
+        <p class="au-lg-ta-center au-mb-3">{{person.frase}}</p>
         <a target="_blank" href="https://instagram.com/{{person.instagram}}" class="ae-u-bolder au-underline">@{{person.instagram}}</a>
     </div>
 

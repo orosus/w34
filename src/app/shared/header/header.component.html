@@ -13,13 +13,15 @@
     </label>
     <!-- Inicia TOPBAR -->
     <div class="ae-container-fluid rk-topbar">
+      <!-- Abre logo -->
       <h1 class="rk-logo">
         <a routerLink="">  
           <img src="assets/img/logo_w34.png">
           {{ infoService.info.titulo }}
           <sup>TM</sup>
         </a>
-      </h1>
+      </h1> <!-- Cierra logo -->
+      <!-- Abre barra de navegación (= header excepto logo) -->
       <nav class="rk-navigation">
         <!-- Abre Menu -->
         <ul class="rk-menu">
@@ -27,7 +29,16 @@
             <a routerLink="home" class="rk-menu__link">Home</a>
           </li>
           <li routerLinkActive="active" class="rk-menu__item">
+            <a href="#0" class="rk-menu__link">All projects</a>
+          </li>
+          <li routerLinkActive="active" class="rk-menu__item">
             <a href="#0" class="rk-menu__link">Recipes</a>
+          </li>
+          <li routerLinkActive="active" class="rk-menu__item">
+            <a href="#0" class="rk-menu__link">DIY</a>
+          </li>
+          <li routerLinkActive="active" class="rk-menu__item">
+            <a href="#0" class="rk-menu__link">Gifts</a>
           </li>
           <li routerLinkActive="active" class="rk-menu__item">
             <a href="#0" class="rk-menu__link">Travels</a>
@@ -35,8 +46,7 @@
           <li routerLinkActive="active" class="rk-menu__item">
             <a routerLink="about" class="rk-menu__link">About</a>
           </li>
-        </ul>
-        <!-- Cierra Menu -->
+        </ul> <!-- Cierra Menu -->
         <!-- Abre Caja de busqueda -->
         <div class="rk-search">
           <input type="text"
@@ -50,9 +60,7 @@
           <label for="urku-search">
             <svg><use xlink:href="assets/img/symbols.svg#icon-search"></use></svg>
           </label>
-        </div>
-        <!-- Cierra Caja de busqueda -->
-      </nav>
-    </div>
-    <!-- Cierra TOPBAR -->
+        </div> <!-- Cierra Caja de busqueda -->
+      </nav> <!-- Cierra barra de navegacion (= header excepto logo) -->
+    </div> <!-- Cierra TOPBAR -->
   </header>

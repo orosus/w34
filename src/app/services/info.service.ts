@@ -29,7 +29,8 @@ export class InfoService {
 
   private loadTeam(){
     // Leer el archivo JSON de Firebase
-    this.http.get('https://orosuswebangular.firebaseio.com/equipo.json')
+    // this.http.get('https://orosuswebangular.firebaseio.com/equipo.json')
+    this.http.get('assets/data/team.json')
     .subscribe( (resp: any[]) => {
       this.team = resp;
       // console.log(resp);
