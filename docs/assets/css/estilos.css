@@ -1485,7 +1485,7 @@ body {
   margin-top: 4rem;
   letter-spacing: .05em;
   line-height: 1.8125;
-  text-align: left;
+  text-align: justify;
 }
 
 .blog-meta {

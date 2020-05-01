@@ -1,121 +1,41 @@
 <section class="ae-container-fluid ae-container-fluid--inner rk-blog">
+
   <div class="rk-blog__items">
-
-    <div class="rk-blog__item">
-      <div class="post-img post-5 rk-landscape-alt rk-toportrait">
+    <!--------------------------------------------------------------------------->
+    <!-- FOR cada home_item en la base de datos home.json -->
+    <div *ngFor="let home_item of infoService.home" >
+      <!-- Abre contenido de la imagen -->
+      <div class="post-img rk-landscape-alt rk-toportrait"
+          [ngStyle]="{ 'background-image': 'url('+ home_item.img +')' }">
         <div class="item-meta">
-          <p><a href="#" class="arrow-button">What is wanderlust?<span class="arrow-cont">
-                <svg>
-                  <use xlink:href="assets/img/symbols.svg#arrow"></use>
-                </svg></span></a></p>
+          <h1 class="ae-u-bolder rk-portfolio-title">{{home_item.title}}</h1>
+          <p *ngIf=home_item.imgtext>
+            <a [routerLink]="home_item.link" class="arrow-button">{{home_item.imgtext}}
+              <span class="arrow-cont">
+                <svg><use xlink:href="assets/img/symbols.svg#arrow"></use></svg>
+              </span>
+            </a>
+          </p>
         </div>
       </div>
+      <!-- Cierra contenido de la imagen -->
+      <!-- Abre contenido del texto -->
       <div class="blog-info">
-        <h2 class="blog-info__title"> <a href="blog-post.html"> What is wanderlust?</a></h2>
-        <p class="blog-info__descrip">
-          Wanderlust is the desire of getting lost discovering new places and experiences, mainly by means of travelling. In this site, we want to focus in different ways of having this feeling. You have find out what kind of experiences inspire you to have this desire of discovering. Here we want to share what inspire us... Cooking, making DIY projects and small presents, travelling, ... </p>
+        <h2 class="blog-info__title"> <a [routerLink]="home_item.link">{{home_item.subtitle}}</a></h2>
+        <p class="blog-info__descrip"> {{home_item.text}}
       </div>
-      <div class="blog-meta"><a href="blog-post.html" class="ae-u-bolder blog-meta__comments">5 Comments</a><span class="ae-kappa ae-u-bold blog-meta__date">August, 08 2015</span><a href="#0" class="arrow-button blog-meta__read-more">More about us<span class="arrow-cont">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></div>
+      <div class="blog-meta">
+        <a [routerLink]="home_item.link" class="ae-u-bolder blog-meta__comments">No Comment</a>
+        <span class="ae-kappa ae-u-bold blog-meta__date">August, 02 2015</span>
+        <a [routerLink]="home_item.link" class="arrow-button blog-meta__read-more">{{home_item.linktext}}
+          <span class="arrow-cont">
+            <svg><use xlink:href="assets/img/symbols.svg#arrow"></use></svg>
+          </span>
+        </a>
+      </div>
+      <div class="blog-info"> <!--gap--> </div> 
+      <!-- Cierra contenido del texto -->
     </div>
-    <div class="rk-blog__item">
-      <div class="post-img post-8 rk-landscape-alt rk-tosquare">
-        <div class="item-meta">
-          <p><a href="blog-post.html" class="arrow-button">Read More<span class="arrow-cont">
-                <svg>
-                  <use xlink:href="assets/img/symbols.svg#arrow"></use>
-                </svg></span></a></p>
-        </div>
-      </div>
-      <div class="blog-info">
-        <h2 class="blog-info__title"> <a href="blog-post.html">The art of cooking</a></h2>
-        <h5 class="blog-info__author">By <a href="blog-post.html" class="ae-u-bolder">W34</a></h5>
-        <p class="blog-info__descrip">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste</p>
-      </div>
-      <div class="blog-meta"><a href="blog-post.html" class="ae-u-bolder blog-meta__comments">No Comment</a><span class="ae-kappa ae-u-bold blog-meta__date">August, 02 2015</span><a href="#0" class="arrow-button blog-meta__read-more">Read More<span class="arrow-cont">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></div>
-    </div>
-    <div class="rk-blog__item">
-      <div class="post-img post-7 rk-landscape-alt rk-tosquare">
-        <div class="item-meta">
-          <p><a href="blog-post.html" class="arrow-button">Read More<span class="arrow-cont">
-                <svg>
-                  <use xlink:href="assets/img/symbols.svg#arrow"></use>
-                </svg></span></a></p>
-        </div>
-      </div>
-      <div class="blog-info">
-        <h2 class="blog-info__title"> <a href="blog-post.html">Only Images Sistem 02</a></h2>
-        <h5 class="blog-info__author">By <a href="blog-post.html" class="ae-u-bolder">Pixeden</a></h5>
-        <p class="blog-info__descrip"></p>
-      </div>
-      <div class="blog-meta"><a href="blog-post.html" class="ae-u-bolder blog-meta__comments">3 Comments</a><span class="ae-kappa ae-u-bold blog-meta__date">August, 04 2015</span><a href="#0" class="arrow-button blog-meta__read-more">Read More<span class="arrow-cont">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></div>
-    </div>
-    <div class="rk-blog__item">
-      <div class="post-img post-6 rk-landscape-alt rk-toportrait">
-        <div class="item-meta">
-          <p><a href="blog-post.html" class="arrow-button">Read More<span class="arrow-cont">
-                <svg>
-                  <use xlink:href="assets/img/symbols.svg#arrow"></use>
-                </svg></span></a></p>
-        </div>
-      </div>
-      <div class="blog-info">
-        <h2 class="blog-info__title"> <a href="blog-post.html">Sublimmme Portfolio</a></h2>
-        <h5 class="blog-info__author">By <a href="blog-post.html" class="ae-u-bolder">Pixeden</a></h5>
-        <p class="blog-info__descrip">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et <span>quasi architecto beatae vitae dicta sunt explicabo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</span></p>
-      </div>
-      <div class="blog-meta"><a href="blog-post.html" class="ae-u-bolder blog-meta__comments">2 Comments</a><span class="ae-kappa ae-u-bold blog-meta__date">August, 10 2015</span><a href="#0" class="arrow-button blog-meta__read-more">Read More<span class="arrow-cont">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></div>
-    </div>
-    <div class="rk-blog__item">
-      <div class="post-img post-3 rk-landscape-alt rk-tosquare">
-        <div class="item-meta">
-          <p><a href="blog-post.html" class="arrow-button">Read More<span class="arrow-cont">
-                <svg>
-                  <use xlink:href="assets/img/symbols.svg#arrow"></use>
-                </svg></span></a></p>
-        </div>
-      </div>
-      <div class="blog-info">
-        <h2 class="blog-info__title"> <a href="blog-post.html">Video System</a></h2>
-        <h5 class="blog-info__author">By <a href="blog-post.html" class="ae-u-bolder">Pixeden</a></h5>
-        <p class="blog-info__descrip">Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut <span>aliquid ex ea commodi consequatur</span></p>
-      </div>
-      <div class="blog-meta"><a href="blog-post.html" class="ae-u-bolder blog-meta__comments">2 Comments</a><span class="ae-kappa ae-u-bold blog-meta__date">August, 04 2015</span><a href="#0" class="arrow-button blog-meta__read-more">Read More<span class="arrow-cont">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></div>
-    </div>
-    <div class="rk-blog__item">
-      <div class="post-img post-4 rk-landscape-alt rk-tosquare">
-        <div class="item-meta">
-          <p><a href="blog-post.html" class="arrow-button">Read More<span class="arrow-cont">
-                <svg>
-                  <use xlink:href="assets/img/symbols.svg#arrow"></use>
-                </svg></span></a></p>
-        </div>
-      </div>
-      <div class="blog-info">
-        <h2 class="blog-info__title"> <a href="blog-post.html">Travels</a></h2>
-        <h5 class="blog-info__author">By <a href="blog-post.html" class="ae-u-bolder">W34</a></h5>
-        <p class="blog-info__descrip"></p>
-      </div>
-      <div class="blog-meta"><a href="blog-post.html" class="ae-u-bolder blog-meta__comments">No Comment</a><span class="ae-kappa ae-u-bold blog-meta__date">August, 01 2015</span><a href="#0" class="arrow-button blog-meta__read-more">Read More<span class="arrow-cont">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></div>
-    </div>
-
+    <!---------------------------------------------------------------------------->
   </div>
 </section>

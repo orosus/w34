@@ -1,0 +1,47 @@
+[
+  {
+    "title": "What is wanderlust?",
+    "img": "assets/img/portada-w34.jpg",
+    "imgtext": "",
+    "subtitle": "Discover wanderlust with us!",
+    "text": "Wanderlust is the desire of getting lost discovering new places and experiences, mainly by means of travelling. In this site, we want to focus in different ways of having this feeling. You have find out what kind of experiences inspire you to have this desire of discovering. Here we want to share what inspire us... Cooking, making DIY projects and small presents, travelling, ... ",
+    "link":"/posts",
+    "linktext":"Find out our projects"
+  }, 
+  {
+    "title":"",
+    "img": "assets/img/portada-recipes.jpg",
+    "imgtext": "Find out our recipes",
+    "subtitle": "Enjoy Cooking",
+    "text": "Discover our recipes bla bla bla Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo",
+    "link":"/posts/recipes",
+    "linktext":"See more"
+  }, 
+  {
+    "title":"",
+    "img": "assets/img/portada-gifts.jpg",
+    "imgtext": "More gift ideas",
+    "subtitle": "Find ideas for making Presents",
+    "text": "Discover our recipes bla bla bla Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo",
+    "link":"/posts/gifts",
+    "linktext":"See more"
+  }, 
+  {
+    "title":"",
+    "img": "assets/img/portada-diy.jpg",
+    "imgtext": "Do it your self!",
+    "subtitle": "DIY projects",
+    "text": "Discover our recipes bla bla bla Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo",
+    "link":"/posts/diy",
+    "linktext":"See more"
+  }, 
+  {
+    "title":"",
+    "img": "assets/img/portada-travels.jpg",
+    "imgtext": "More places",
+    "subtitle": "More than travelling",
+    "text": "Discover our recipes bla bla bla Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo",
+    "link":"/posts/travels",
+    "linktext":"See more"
+  } 
+]

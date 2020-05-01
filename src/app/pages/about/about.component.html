@@ -1,5 +1,6 @@
 
-<div class="ae-grid au-xs-ta-center au-mb-3">
+<div class="ae-grid au-xs-ta-center au-mb-3"
+    *ngIf="infoService.team"> <!-- comprobamos si ha cargado el infoService primero-->
     <!--Este div se repite tantas veces como personas haya en el database eqipo-->
     <div *ngFor="let person of infoService.team" class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3 item-lg--offset-2">
         <img [src]="person.img" alt="" class="au-mb-3">
