@@ -1488,6 +1488,13 @@ body {
   text-align: justify;
 }
 
+.blog-info__link {
+  margin-top: 2rem;
+  letter-spacing: .05em;
+  line-height: 1.8125;
+  text-align: right;
+}
+
 .blog-meta {
   -webkit-box-align: baseline;
   -webkit-align-items: baseline;

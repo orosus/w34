@@ -1,0 +1,12 @@
+<!--Cuadricula principal de productos-->   
+<div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+    <!-- un cuadro FOR cada producto-->
+    <a *ngFor="let post of postsService.productsFiltered" 
+        [routerLink]="['/recipe', post.cod]" class="animated fadeIn rk-item ae-masonry__item">
+        <img src="assets/img/productos/{{ post.url }}.jpg" alt="">
+        <div class="item-meta">
+            <h2>{{ post.titulo }}</h2>
+            <p>{{ post.categoria }}</p>
+        </div>
+    </a>
+</div>

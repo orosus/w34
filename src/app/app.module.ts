@@ -14,9 +14,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { RecipeComponent } from './pages/recipe/recipe.component';
+import { SearchComponent } from './pages/search/search.component';
 
 // import { ItemComponent } from './pages/item/item.component';
-// import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +27,8 @@ import { RecipeComponent } from './pages/recipe/recipe.component';
     AboutComponent,
     PostsComponent,
     RecipeComponent,
+    SearchComponent,
     // ItemComponent,
-    // SearchComponent
   ],
   imports: [
     BrowserModule,

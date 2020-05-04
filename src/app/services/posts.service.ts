@@ -21,7 +21,7 @@ export class PostsService {
 
     return new Promise( ( resolve, reject ) => {
 
-      this.http.get('assets/data/productos_idx.json')
+      this.http.get('assets/data/posts_ids.json')
         .subscribe( (resp: Product[]) => {
           console.log(resp);
           this.product = resp;
@@ -36,28 +36,30 @@ export class PostsService {
   // metodo para conseguir el producto del HTTP usado en recipe.component.ts
   getProducto( id: string ){
     return this.http.get(`https://orosuswebangular.firebaseio.com/productos/${ id }.json`);
+    // return this.http.get('assets/data/productos.json');
+    // return this.http.get('assets/data/posts_ids.json');
   }
 
 
   // metodo para buscar productos con el termino de busqueda usado en search.component.ts
-  searchProduct( term: string ) {
+  searchPost( term: string ) {
 
     if ( this.product.length === 0 ) {
       // cargar productos
       this.loadPosts().then( () => {
         // esto se ejecuta despues de cargar productos
         // aplicar filtro
-        this.filterProducts( term );
+        this.filterPosts( term );
       });
     } else {
       // aplicar filtro
-      this.filterProducts( term );
+      this.filterPosts( term );
     }
 
-  } // Cierra metodo searchProduct
+  } // Cierra metodo searchPost
 
-  // funcion para aplicar filtro a los productos con el termino de busqueda
-  private filterProducts( term: string ) {
+  // funcion para aplicar filtro a los posts con el termino de busqueda
+  private filterPosts( term: string ) {
     console.log(this.product);
     this.productsFiltered = []; // purgamos el array para una nueva busqueda
     term = term.toLocaleLowerCase();
@@ -71,4 +73,4 @@ export class PostsService {
   }
 
 
-} // Cierra ProductosService
+} // Cierra PostsService

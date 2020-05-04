@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // metodo para buscar productos usado en el servicio Products
+  // metodo para buscar productos definido en el servicio Products
   searchProduct( term: string ) {
     if ( term.length < 1 ) {
       return;
