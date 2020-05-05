@@ -21,7 +21,8 @@ export class PostsService {
 
     return new Promise( ( resolve, reject ) => {
 
-      this.http.get('assets/data/posts_ids.json')
+      // this.http.get('assets/data/posts_ids.json')
+      this.http.get('https://wanderlust-34.firebaseio.com/posts_ids.json')
         .subscribe( (resp: Product[]) => {
           console.log(resp);
           this.product = resp;
@@ -35,9 +36,8 @@ export class PostsService {
 
   // metodo para conseguir el producto del HTTP usado en recipe.component.ts
   getProducto( id: string ){
-    return this.http.get(`https://orosuswebangular.firebaseio.com/productos/${ id }.json`);
-    // return this.http.get('assets/data/productos.json');
-    // return this.http.get('assets/data/posts_ids.json');
+    return this.http.get(`https://wanderlust-34.firebaseio.com/postspages/${ id }.json`);
+    // return this.http.get('assets/data/postspages.json');
   }
 
 

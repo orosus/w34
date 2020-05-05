@@ -21,13 +21,13 @@
       <!-- Cierra contenido de la imagen -->
       <!-- Abre contenido del texto -->
       <div class="blog-info">
-        <h2 class="blog-info__title"> <a [routerLink]="home_item.link">{{home_item.subtitle}}</a></h2>
+        <h2 class="blog-info__title"> <a [routerLink]=home_item.link>{{home_item.subtitle}}</a></h2>
         <p class="blog-info__descrip"> {{home_item.text}}</p>    
       </div>
       <div class="blog-meta">
-        <a href="#" class="ae-u-bolder blog-meta__comments"></a>
-        <span class="ae-kappa ae-u-bold blog-meta__date"></span>
-        <a class="arrow-button blog-meta__read-more" [routerLink]="home_item.link">{{home_item.linktext}}
+        <a href="#" class="ae-u-bolder blog-meta__comments"></a> <!--gap-->
+        <span class="ae-kappa ae-u-bold blog-meta__date"></span> <!--gap-->
+        <a class="arrow-button blog-meta__read-more" [routerLink]=home_item.link>{{home_item.linktext}}
           <span class="arrow-cont">
             <svg><use xlink:href="assets/img/symbols.svg#arrow"></use></svg>
           </span>

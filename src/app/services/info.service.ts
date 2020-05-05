@@ -21,7 +21,7 @@ export class InfoService {
   }
   private loadInfo(){
     // Leer el archivo JSON local
-    this.http.get('assets/data/data-page.json')
+    this.http.get('https://wanderlust-34.firebaseio.com/info.json')
     .subscribe( (resp: InfoPage) => {
       this.loaded = true;
       this.info = resp;
@@ -31,8 +31,8 @@ export class InfoService {
 
   private loadTeam(){
     // Leer el archivo JSON de Firebase
-    // this.http.get('https://orosuswebangular.firebaseio.com/equipo.json')
-    this.http.get('assets/data/team.json')
+    this.http.get('https://wanderlust-34.firebaseio.com/team.json')
+    //this.http.get('assets/data/team.json')
     .subscribe( (resp: any[]) => {
       this.team = resp;
       // console.log(resp);
@@ -40,7 +40,7 @@ export class InfoService {
   }
 
   private loadHome(){
-    this.http.get('assets/data/home.json')
+    this.http.get('https://wanderlust-34.firebaseio.com/home.json')
     .subscribe( (resp: any[]) => {
       this.home = resp;
       // console.log(resp);
