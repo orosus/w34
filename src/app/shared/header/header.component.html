@@ -25,24 +25,19 @@
       <nav class="rk-navigation">
         <!-- Abre Menu -->
         <ul class="rk-menu">
-          <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="/home" class="rk-menu__link">Home</a>
+          <!-- FOR cada item en el array info.menu[] de la BD info -->
+          <li *ngFor="let menu_item of infoService.info.menu"
+            routerLinkActive="active" class="rk-menu__item">
+            <a routerLink="{{ menu_item.link }}" class="rk-menu__link">{{ menu_item.es }}</a>
           </li>
-          <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="/posts" class="rk-menu__link">All projects</a>
-          </li>
-          <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="/search/recipes" class="rk-menu__link">Recipes</a>
-          </li>
-          <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="/search/diy" class="rk-menu__link">DIY</a>
-          </li>
-          <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="/search/gifts" class="rk-menu__link">Gifts</a>
-          </li>
-          <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="/search/travels" class="rk-menu__link">Travels</a>
-          </li>
+          <!-- Selector de Idioma -->
+          <select id="lang" 
+            routerLinkActive="active" class="rk-menu__item">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="eo">EO</option>
+          </select>
         </ul> <!-- Cierra Menu -->
         <!-- Abre Caja de busqueda -->
         <div class="rk-search">

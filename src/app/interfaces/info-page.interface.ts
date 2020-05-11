@@ -1,11 +1,20 @@
 
 export interface InfoPage {
-  titulo?: string;
   email?: string;
-  nombre?: string;
   facebook?: string;
-  twitter?: string;
   instagram?: string;
+  menu?: Menu[];
+  nombre?: string;
   thingiverse?: string;
-  equipo?: any[];
+  titulo?: string;
+  twitter?: string;
 }
+
+interface Menu {
+  de?: string;
+  en?: string;
+  eo?: string;
+  es?: string;
+  link?: string;
+}
+
